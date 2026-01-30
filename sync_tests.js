@@ -27,7 +27,6 @@ const testData = require('./tests/test-data.js');
     for (const t of testData.positiveTests) {
         const actual = await getTranslation(t.input);
         t.actual = actual;
-        // Strict equality for status
         t.status = (actual === t.expected) ? 'Pass' : 'Fail';
         console.log(`${t.id}: ${t.status} (Exp: ${t.expected} | Act: ${t.actual})`);
     }
@@ -44,8 +43,6 @@ const testData = require('./tests/test-data.js');
 
     const fileContent = `module.exports = ${JSON.stringify(testData, null, 2)};`;
 
-    // Preserve the module.exports format but make it prettier if needed. 
-    // JSON.stringify is fine.
     fs.writeFileSync('./tests/test-data.js', fileContent);
     console.log('test-data.js updated.');
 })();
