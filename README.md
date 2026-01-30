@@ -21,7 +21,7 @@ All tests are mapped to Appendix 1 categories (1-20) to ensure complete coverage
 ## Installation
 
 ```bash
-git clone https://github.com/[YOUR-USERNAME]/swifttranslator-playwright.git
+git clone https://github.com/ShanthanosJr/IT23641624_ITPM_Assignment_1.git
 cd swifttranslator-playwright
 npm install
 ```
@@ -77,7 +77,7 @@ Each test includes: input text, expected output, actual output (captured), statu
 
 All test cases are stored in `tests/test-data.js` for easy reference and update.
 
-Excel template with all test case details: `test-cases-[REGNUM].xlsx`
+Excel template with all test case details: `swifttranslator-playwright/IT23641624_files/IT23641624_ITPM_Assignment_1.xlsx`
 
 ## Key Selectors
 - Singlish input: `textarea[placeholder*="Singlish"]`
@@ -87,13 +87,47 @@ Excel template with all test case details: `test-cases-[REGNUM].xlsx`
 - Tests run against https://www.swifttranslator.com/ (live application)
 - Each test waits for real-time output update (~1.5 seconds)
 - No convert button required; output auto-updates as user types
-- Negative tests verify expected failures and robustness issues
+- Negative tests verify expected failures and robustness issues.
+
+> **Note on Redesigned Test Cases (IT23641624_files/IT23641624_ITPM_Assignment_1 - Test Case Table for Sinhala Tra.csv):**
+> This test suite has been updated to align with the redesigned test cases provided in `IT23641624_files/IT23641624_ITPM_Assignment_1 - Test Case Table for Sinhala Tra.csv`.
+> The `tests/test-data.js` file is automatically synchronized with the live application using the `node sync_tests.js` script (with increased timeout for robustness).
+> Tests that currently fail on the live site (as recorded in `test-data.js` with status 'Fail') are marked as **expected failures** (`test.fail()`) in the test suite. This ensures the test suite passes green while accurately documenting existing application issues.
 
 ## Submission
 This repository is part of IT3040 Assignment 1 submission.
 
-Repository Link: https://github.com/[YOUR-USERNAME]/swifttranslator-playwright
+Repository Link: https://github.com/ShanthanosJr/IT23641624_ITPM_Assignment_1
 
-Author: [Your Name]
-Registration Number: [YOUR-REGNUM]
+Author: Ravishan R K
+Registration Number: IT23641624
 Date: January 2026
+
+## License
+This project is licensed under the MIT License.
+
+> **Property of IT23641624**
+>
+> This codebase, including all test scripts and documentation, is the intellectual property of IT23641624. Use of this repository is subject to academic integrity guidelines of the institute.
+
+MIT License
+
+Copyright (c) 2026 IT23641624
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.

@@ -26,10 +26,16 @@ test.describe('UI Functional Tests', () => {
 
         // Type 'a' -> 'amma'
         await page.locator(inputSelector).pressSequentially('a', { delay: 100 });
-        await page.waitForTimeout(1000); // Final wait
+        await page.waitForTimeout(500);
         const output4 = await page.locator(outputSelector).textContent();
         console.log(`Typed "amma" -> Output: "${output4.trim()}"`);
 
-        expect(output4.trim()).not.toBe('');
+        // Type 'a' -> 'ammaa'
+        await page.locator(inputSelector).pressSequentially('a', { delay: 100 });
+        await page.waitForTimeout(1000); // Final wait
+        const output5 = await page.locator(outputSelector).textContent();
+        console.log(`Typed "ammaa" -> Output: "${output5.trim()}"`);
+
+        expect(output5.trim()).toBe('අම්මා');
     });
 });
