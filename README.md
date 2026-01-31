@@ -1,4 +1,4 @@
-# SwiftTranslator Playwright Test Suite - IT3040 Assignment 1
+# SwiftTranslator Playwright Test Suite - IT3040 Assignment 1 (IT23641624)
 
 ## Overview
 This repository contains a comprehensive Playwright automation test suite for testing the SwiftTranslator application 
