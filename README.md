@@ -3,7 +3,7 @@
 ## Overview
 This repository contains a comprehensive Playwright automation test suite for testing the SwiftTranslator application 
 (Singlish → Sinhala conversion). The suite includes 24 positive functional tests, 10 negative functional tests, and 
-1 UI real-time behavior test, covering all requirements from Appendix 1 of Assignment 1.
+1 UI real-time behavior test, covering all requirements from Appendix 1 and Appendix 2 of Assignment 1.
 
 ## Test Coverage
 - **Positive Functional Tests (24)**: Test correct conversion across all sentence structures, grammar forms, 
