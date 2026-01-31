@@ -60,7 +60,7 @@ npx playwright show-report
 swifttranslator-playwright/
 ├── tests/
 │   ├── functional/
-│   │   └── functional.spec.js       (24+ functional tests)
+│   │   └── functional.spec.js       (34+ functional tests)
 │   ├── ui/
 │   │   └── ui.spec.js               (UI tests)
 │   └── test-data.js                 (Test case data store)
