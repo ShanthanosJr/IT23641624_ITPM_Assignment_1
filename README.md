@@ -77,7 +77,7 @@ Each test includes: input text, expected output, actual output (captured), statu
 
 All test cases are stored in `tests/test-data.js` for easy reference and update.
 
-Excel template with all test case details: `swifttranslator-playwright/IT23641624_files/IT23641624_ITPM_Assignment_1.xlsx`
+Excel template with all test case details: `IT23641624_files/IT23641624_ITPM_Assignment_1.xlsx`
 
 ## Key Selectors
 - Singlish input: `textarea[placeholder*="Singlish"]`
